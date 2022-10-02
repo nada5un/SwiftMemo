@@ -33,6 +33,7 @@ struct ComposeView: View {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button{
                         store.insert(memo: content)
+                        dissmiss()
                     } label: {
                         Text("저장")
                     }
